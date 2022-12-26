@@ -83,12 +83,12 @@ def get_readable_time(seconds: int) -> str:
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-PM_START_PIC = "https://telegra.ph/file/90bd376bb7a6d1539137d.mp4"
+PM_START_PIC = "https://graph.org/file/6aab18496bf9385344ac9.mp4"
 
 PM_START_TEXT ="""
-Heya {} , My name is Miku - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
+Heya {} , My name is PIRATE༒KING - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
 
-Join my [News Channel](https://t.me/MikuBotUpdates) to get information on all the latest updates. """
+Join my [News Channel](https://t.me/PirateKing_update_channel) to get information on all the latest updates. """
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -294,23 +294,11 @@ def akashabout_callback(update, context):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="Admins", callback_data="akashadmin"),
-                    InlineKeyboardButton(text="Notes", callback_data="akashnotes"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Support", callback_data="akashsupport"),
-                    InlineKeyboardButton(text="Credits", callback_data="akashcredit"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/Desinobita/src"),
-                 ],
-                 [
+                 
                     InlineKeyboardButton(text="Go Back", callback_data="source_back"),
-                 ]
-                ]
-            ),
-        )
+                [
+            )
+        
 
     elif query.data == "akashadmin":
         query.message.edit_text(
@@ -348,8 +336,8 @@ def akashabout_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/Suzune_Support"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/KennedyProject"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/ani_school"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/PirateKing_update_channel"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="akash"),
@@ -367,27 +355,7 @@ def akashabout_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="Akash", url="https://github.com/Desinobita"),
-                    InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Feri", url="https://github.com/FeriEXP"),
-                    InlineKeyboardButton(text="riz-ex", url="https://github.com/riz-ex"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Anime Kaizoku", url="https://github.com/animekaizoku"),
-                    InlineKeyboardButton(text="TheGhost Hunter", url="https://github.com/HuntingBots"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Inuka Asith", url="https://github.com/inukaasith"),
-                    InlineKeyboardButton(text="Noob-Kittu", url="https://github.com/noob-kittu"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Queen Arzoo", url="https://github.com/QueenArzoo"),
-                    InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
-                 ],
-                 [
+                 
                     InlineKeyboardButton(text="Go Back", callback_data="akash"),
                  ]
                 ]
@@ -414,11 +382,11 @@ def Source_about_callback(update, context):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
+                 
                     InlineKeyboardButton(text="Go Back", callback_data="akash")
-                 ]
+                 
                 ]
-            ),
+            
         )
     elif query.data == "source_back":
         first_name = update.effective_user.first_name
